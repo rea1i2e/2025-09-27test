@@ -29,13 +29,15 @@ npm run dev
 ```
 
 ## 主な構成
-├── index.html … **htmlはこれを編集**
+
+```
+├── index.html … htmlはこれを編集
 ├── src
 │   └── assets
-│       ├── images … **サンプル画像が入っています**
+│       ├── images … サンプル画像が入っています
 │       ├── js
-│       │   ├── _test.js … **jsは主にこれを編集**
-│       │   └── main.js … **jsファイルを追加したらここでimport**
+│       │   ├── _test.js … jsは主にこれを編集
+│       │   └── main.js … jsファイルを追加したらここでimport
 │       └── scss
 │           ├── base
 │           │   ├── _base.scss
@@ -43,8 +45,9 @@ npm run dev
 │           │   ├── _function.scss
 │           │   ├── _reset.scss
 │           │   └── _setting.scss
-│           ├── style.scss … **読み込み用**
-│           └── _test.scss … **scssは主にこれを編集**
+│           ├── style.scss … 読み込み用
+│           └── _test.scss … scssは主にこれを編集
+```
 
 
 ## 設定
