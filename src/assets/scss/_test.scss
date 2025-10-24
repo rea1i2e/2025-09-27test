@@ -2,68 +2,7 @@
 @use "base/function" as *;
 @use "base/_breakpoints.scss" as *;
 
-.container {
-  position: relative;
-  z-index: 0;
-  padding: rem(80);
-  background-color: beige;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: rem(120) rem(40);
-}
-
-.container__class-name {
-  position: absolute;
-  top: 1em;
-  left: 1em;
-}
-
-.map {
-  position: absolute;
-  z-index: -1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%;
-  aspect-ratio: 3 / 1;
-  background-color: pink;
-}
-
-.box {
-  background-color: yellow;
-}
-
-.box:nth-child(4)::before,
-.box:nth-child(4)::after {
-  display: block;
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 60%;
-}
-
-.box:nth-child(4)::before {
-  border: 1px solid;
-  width: rem(40);
-  height: rem(100);
-background-image: linear-gradient(
-  to top right,
-  transparent calc(50% - 0.5px),
-  black,
-  transparent calc(50% + 0.5px)
-);
-}
-
-/* ドット */
-.box:nth-child(4)::after {
-  background-color: blue;
-  // z-index: -2;
-  border-radius: 50%;
-  width: rem(20);
+.test {
+  width: rem(100);
   aspect-ratio: 1;
-}
-
-.box__inner {
-  display: block;
-  background-color: orange;
 }
