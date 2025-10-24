@@ -32,25 +32,15 @@ gh repo edit $(date +%Y-%m-%d)test --description "新しい説明文"
 ### ローカル環境で実機確認
 - 開発サーバー起動時に表示される  Network: http://xxx.xxx.xxx.xxx:5173/ にアクセス
 
-### GitHub Pagesで公開するための設定
-- https://github.com/rea1i2e/$(date +%Y-%m-%d)test/settings/pages にアクセスして、Sourceを指定してください
-- ビルドが完了したら、GitHub PagesのURLを自動取得するコマンドを設定すると便利です
-- pushすると、huskyにより自動的にビルドされ、GitHub Pagesで公開されます
-- 公開URLは https://rea1i2e.github.io/$(date +%Y-%m-%d)test/ になります
 
-## 便利なコマンド
-### GitHub Pagesで公開するための設定画面URLを表示 
+### GitHub Pagesで公開
+- GitHubの設定画面URLを表示するコマンドを実行
 ```bash
 npm run settings
 ```
 - Branchのフォルダで/docsを選択して、Save
 
-### URLを表示
-```bash
-npm run url
-```
-
-### ブラウザで開く
+- ブラウザで開くコマンドを実行
 ```bash
 npm run open
 ```
