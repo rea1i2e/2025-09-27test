@@ -4,7 +4,7 @@
 echo "🔨 Building project before push..."
 npm run build
 
-echo "📦 Adding dist folder to git..."
-git add dist/
+echo "📦 Adding docs folder to git..."
+git add docs/
 
 echo "✅ Build completed and dist folder staged for commit"
