@@ -29,7 +29,16 @@ echo "💡 説明文は後から 'gh repo edit' で修正可能です"
 gh repo edit $(date +%Y-%m-%d)test --description "新しい説明文"
 ```
 
-**必要な前提条件**：
+### ローカル環境で実機確認
+- 開発サーバー起動時に表示される  Network: http://xxx.xxx.xxx.xxx:5173/ にアクセス
+
+### GitHub Pagesで公開するための設定
+- https://github.com/rea1i2e/$(date +%Y-%m-%d)test/settings/pages にアクセスして、Sourceを指定してください
+- ビルドが完了したら、GitHub PagesのURLを自動取得するコマンドを設定すると便利です
+- pushすると、huskyにより自動的にビルドされ、GitHub Pagesで公開されます
+- 公開URLは https://rea1i2e.github.io/$(date +%Y-%m-%d)test/ になります
+
+**コマンドによりリポジトリを作成する際に必要な前提条件**：
 - GitHub CLI (`gh`) がインストールされている
 - GitHub認証が完了している
 
@@ -73,14 +82,3 @@ npm run dev
 
 ## 設定
 - src/assets/scss/base/_breakpoints.scss の $startFrom: sp; を pc に変更するとPCファーストになります
-
-## その他説明
-### ローカル環境で実機確認
-- 開発サーバー起動時に表示される  Network: http://xxx.xxx.xxx.xxx:5173/ にアクセス
-
-### GitHub Pagesで公開するための設定
-- https://github.com/rea1i2e/$(date +%Y-%m-%d)test/settings/pages にアクセスして、Sourceを指定してください
-- ビルドが完了したら、GitHub PagesのURLを自動取得するコマンドを設定すると便利です
-- pushすると、huskyにより自動的にビルドされ、GitHub Pagesで公開されます
-- 公開URLは https://rea1i2e.github.io/$(date +%Y-%m-%d)test/ になります
-
