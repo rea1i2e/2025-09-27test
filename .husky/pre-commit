@@ -8,3 +8,4 @@ echo "📦 Adding docs folder to git..."
 git add docs/
 
 echo "✅ Build completed and docs folder staged for commit"
+echo "🌐 GitHub Pages URL: https://rea1i2e.github.io/$(basename $(pwd))/"

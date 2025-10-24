@@ -7,7 +7,11 @@
     "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview",
-    "prepare": "husky"
+    "prepare": "husky",
+    "open": "open https://rea1i2e.github.io/$(basename $(pwd))/",
+    "url": "echo \"https://rea1i2e.github.io/$(basename $(pwd))/\"",
+    "settings": "echo \"https://github.com/rea1i2e/$(basename $(pwd))/settings/pages\"",
+    "commit": "git add . && git commit -m \"Update\" && git push origin main"
   },
   "devDependencies": {
     "husky": "^9.1.7",

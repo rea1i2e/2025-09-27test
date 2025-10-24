@@ -38,6 +38,25 @@ gh repo edit $(date +%Y-%m-%d)test --description "新しい説明文"
 - pushすると、huskyにより自動的にビルドされ、GitHub Pagesで公開されます
 - 公開URLは https://rea1i2e.github.io/$(date +%Y-%m-%d)test/ になります
 
+### 便利なコマンド
+```bash
+# URLを表示
+npm run url
+
+# 設定ページを表示
+npm run settings
+
+# ブラウザで開く
+npm run open
+
+# 一発でコミット・プッシュ
+npm run commit
+```
+
+⚠️ **注意**: huskyのメッセージを表示するには、コマンドラインでコミット・プッシュしてください
+- IDEやGUIツールでは表示されません
+- コマンド: `git commit -m "message" && git push origin main`
+
 **コマンドによりリポジトリを作成する際に必要な前提条件**：
 - GitHub CLI (`gh`) がインストールされている
 - GitHub認証が完了している
