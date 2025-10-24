@@ -16,6 +16,22 @@
 git clone https://github.com/rea1i2e/2025-09-27test.git 検証用リポジトリ名
 ```
 
+### ワンライナーで検証用プロジェクトを作成
+
+```bash
+gh repo create $(date +%Y-%m-%d)test \
+  --template rea1i2e/2025-09-27test \
+  --public \
+  --description "説明文" && \
+gh repo clone rea1i2e/$(date +%Y-%m-%d)test && \
+cd $(date +%Y-%m-%d)test && \
+echo "✅ 検証用プロジェクトが作成されました！現在のディレクトリ: $(pwd)"
+```
+
+**必要な前提条件**：
+- GitHub CLI (`gh`) がインストールされている
+- GitHub認証が完了している
+
 ### パッケージのインストール
 
 ```bash
