@@ -11,8 +11,9 @@
 
 ## 導入
 
-### このテンプレートを元に、新規リポジトリ作成＋クローン
+### zipでダウンロードまたは、GitHub CLIで新規リポジトリ作成＋クローン
 
+- 新規リポジトリ作成＋クローンする場合は、コマンドを実行
 ```bash
 gh repo create $(date +%Y-%m-%d)test \
   --template rea1i2e/2025-09-27test \
@@ -24,16 +25,28 @@ echo "✅ 検証用プロジェクトが作成されました！現在のディ�
 echo "💡 説明文は後から 'gh repo edit' で修正可能です"
 ```
 
-### 説明文の修正
+- 説明文の修正は、コマンドを実行
 ```bash
 gh repo edit $(date +%Y-%m-%d)test --description "新しい説明文"
+```
+
+### パッケージのインストール
+
+```bash
+npm install
+```
+
+### 開発サーバー+ブラウザの起動
+
+```bash
+npm run dev
 ```
 
 ### ローカル環境で実機確認
 - 開発サーバー起動時に表示される  Network: http://xxx.xxx.xxx.xxx:5173/ にアクセス
 
 
-### GitHub Pagesで公開
+### GitHub Pagesで公開（リポジトリを作成した場合のみ）
 - GitHubの設定画面URLを表示するコマンドを実行
 ```bash
 npm run settings
@@ -58,17 +71,7 @@ npm run open
 - 説明文: `gh repo edit リポジトリ名 --description "新しい説明文"`
 - README.md: 直接編集してコミット
 
-### パッケージのインストール
 
-```bash
-npm install
-```
-
-### 開発サーバー+ブラウザの起動
-
-```bash
-npm run dev
-```
 
 ## 主な構成
 
