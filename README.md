@@ -38,20 +38,23 @@ gh repo edit $(date +%Y-%m-%d)test --description "新しい説明文"
 - pushすると、huskyにより自動的にビルドされ、GitHub Pagesで公開されます
 - 公開URLは https://rea1i2e.github.io/$(date +%Y-%m-%d)test/ になります
 
-### 便利なコマンド
+## 便利なコマンド
+### GitHub Pagesで公開するための設定画面URLを表示 
 ```bash
-# URLを表示
-npm run url
-
-# 設定ページを表示
 npm run settings
-
-# ブラウザで開く
-npm run open
-
-# 一発でコミット・プッシュ
-npm run commit
 ```
+- Branchのフォルダで/docsを選択して、Save
+
+### URLを表示
+```bash
+npm run url
+```
+
+### ブラウザで開く
+```bash
+npm run open
+```
+
 
 ⚠️ **注意**: huskyのメッセージを表示するには、コマンドラインでコミット・プッシュしてください
 - IDEやGUIツールでは表示されません
