@@ -1,7 +1,7 @@
 // vite.config.js
 import { defineConfig } from 'vite'
 export default defineConfig({
-  base: '/docs/',
+  base: './',
   build: {
     outDir: 'docs',
   },
