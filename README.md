@@ -56,3 +56,8 @@ npm run dev
 ## その他説明
 ### 実機確認
 - 開発サーバー起動時に表示される  Network: http://xxx.xxx.xxx.xxx:5173/ にアクセス
+
+### 本番環境の確認
+- **URL**: https://rea1i2e.github.io/2025-09-27test/
+- **手軽に開く**: `npm run open`
+- **一発デプロイ**: `npm run deploy`
